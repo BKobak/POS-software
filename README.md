@@ -1,3 +1,14 @@
-# Point-Of-Sales Software
+# Point-Of-Sales Software for Coffee Shop
+<br/>
 
-## POS Software Development for Coffee Shop
+## About The Project
+<br/>
+
+### Build With
+<br/>
+
+## Getting Started
+<br/>
+
+## License
+Distributed under the GNU General Public License.
