@@ -1,0 +1,23 @@
+{
+  "name": "pos-software",
+  "version": "1.0.0",
+  "description": "Point-Of-Sale desktop application for coffee shop.\r <br/>\r <br/>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BKobak/POS-software.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BKobak/POS-software/issues"
+  },
+  "homepage": "https://github.com/BKobak/POS-software#readme",
+  "devDependencies": {
+    "electron": "^21.1.1"
+  }
+}
