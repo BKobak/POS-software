@@ -1,0 +1,12 @@
+{
+    "name": "pos-software",
+    "version": "1.0.0",
+    "description": "Hello World!",
+    "main": "main.js",
+    "author": "Barbara Kobak",
+    "license": "MIT",
+    "scripts":
+    {
+        "start": "electron ."
+    }
+}
