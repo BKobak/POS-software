@@ -6,12 +6,12 @@ const path = require('path')
 // modify your existing createWindow() function
 const createWindow = () => {
   const win = new BrowserWindow({
-    /*frame: false,*/
+    frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
-  /*win.maximize();*/
+  win.maximize();
   win.loadFile('./src/index.html')
 }
 

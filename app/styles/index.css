@@ -1,0 +1,41 @@
+.dark-bg{
+    background-color: #27251F;
+}
+.green-bg{
+    background-color: #00704A;
+    border-radius: 5%;
+    padding: 10%;
+    margin: 1%;
+}
+.login-bg{
+    background-color: white;
+    margin-top: 250px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 350px;
+    border-radius: 5%;
+    padding: 10%;
+
+    color: #27251F;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.add-user{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: #00704A;
+    background-color: white;
+    border-radius: 15%;
+    padding: 1%;
+}
+h1{
+    font-size: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    font-weight: bold;
+}

@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <link rel="stylesheet" href="../styles/index.css">
+
+    <title>Point Of Sale</title>
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+  
+  <body class="dark-bg">
+    <div class="green-bg">
+        <h1>Welcome</h1>
+        <div class="login-bg">
+            <h2>Log In</h2><br>
+            <label for="id">User ID:</label><br>
+            <input type="text" id="id" name="id"><br><br>
+            <label for="pin">PIN:</label><br>
+            <input type="text" id="pin" name="pin"><br><br>
+            <button class="add-user">Add New User</button>
+        </div>
+    </div>
   </body>
   <script src="./renderer.js"></script>
-</html>
+</html> 
