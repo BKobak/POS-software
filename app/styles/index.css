@@ -3,31 +3,37 @@
 }
 .green-bg{
     background-color: #00704A;
-    border-radius: 5%;
-    padding: 10%;
-    margin: 1%;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 20px;
 }
 .login-bg{
     background-color: white;
-    margin-top: 250px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 350px;
-    border-radius: 5%;
-    padding: 10%;
+    margin-top: 50px;
+    margin-bottom: 65px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 10px;
+    padding: 15px;
 
     color: #27251F;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-.add-user{
+.btn{
+    text-decoration: none;
+    color: #27251F;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     border-color: #00704A;
     background-color: white;
-    border-radius: 15%;
-    padding: 1%;
+    border-radius: 3px;
+    padding: 2px 6px 2px 6px;
+    border-top: 3px solid #00704A;
+    border-right: 2px solid #00704A;
+    border-bottom: 2px solid #00704A;
+    border-left: 3px solid #00704A;
 }
 h1{
     font-size: 120px;
