@@ -5,8 +5,10 @@
     "main": "main.js",
     "author": "Barbara Kobak",
     "license": "MIT",
-    "scripts":
-    {
+    "scripts": {
         "start": "electron ."
+    },
+    "dependencies": {
+        "bootstrap": "^4.1.1"
     }
 }
