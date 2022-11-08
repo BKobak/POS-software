@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "create-react-app": "^5.0.1",
-    "react-router-dom": "^6.4.3"
+    "react-router-dom": "^6.4.3",
+    "tar": ">=4.4.18",
+    "loader-utils": ">=1.4.1"
   }
 }
