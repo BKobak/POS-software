@@ -1,20 +1,9 @@
 {
-  "name": "basic-electron-react-boilerplate",
-  "version": "0.7.0",
-  "description": "Minimal and modern react+electron+webpack boilerplate",
-  "author": "Keith Weaver",
-  "homepage": "https://github.com/keithweaver/basic-electron-react-boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/keithweaver/basic-electron-react-boilerplate.git"
-  },
-  "contributors": [
-    "Phillip Barbiero <https://github.com/pbarbiero>",
-    "Keith Weaver <https://github.com/keithweaver>",
-    "Denys Dovhan <https://github.com/denysdovhan>",
-    "Willy Ovalle <https://github.com/wovalle>"
-  ],
-  "license": "MIT",
+  "name": "point-of-sale",
+  "version": "0.0.1",
+  "author": "Barbara Kobak",
+
+  "license": "GNU",
   "main": "main.js",
   "scripts": {
     "prod": "webpack --config webpack.build.config.js && electron --noDevServer .",

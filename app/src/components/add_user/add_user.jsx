@@ -1,22 +1,18 @@
 import React from 'react';
 
-function LogIn () {
+function add_user () {
   return(
   <div>
-    <h1>Welcome</h1>
+    <h1>SIEMA ENIU</h1>
     <div class="login-bg">
       <h2>Log In</h2>
       <label for="id">User ID:</label>
       <input type="text" id="id" name="id"/><br></br>
       <label for="pin">PIN:</label>
       <input type="text" id="pin" name="pin"/><br></br>
-      <a href='../HomePage'>Log In</a>
-    </div>
-    <div class="btn">
-    <a href='app/src/containers/add_user.js'>Add New User</a>
     </div>
 
   </div>
   )
 }
-export default LogIn;
+export default add_user;
