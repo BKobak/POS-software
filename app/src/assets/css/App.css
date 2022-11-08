@@ -1,15 +1,29 @@
+.dark-bg{
+  background-color: #27251F;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .green-bg{
   background-color: #00704A;
   border-radius: 25px;
   padding: 5px;
-  margin: 20px;
+  margin: 2%;
+  position: relative;
+  border-bottom: 0%;
 }
 .login-bg{
+  position: relative;
   background-color: #27251F;
-  margin-top: 50px;
-  margin-bottom: 65px;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  margin-left: 50vh;
+  margin-right: 50vh;
   border-radius: 10px;
   padding: 15px;
 
@@ -31,12 +45,20 @@
   border-right: 2px solid #00704A;
   border-bottom: 2px solid #00704A;
   border-left: 3px solid #00704A;
+  text-align: center;
+}
+.centered {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1{
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
   text-align: center;
+  position: relative;
 }
 h2{
   font-size: 50px;

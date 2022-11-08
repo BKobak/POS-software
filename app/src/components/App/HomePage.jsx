@@ -10,10 +10,10 @@ function LogIn () {
       <input type="text" id="id" name="id"/><br></br>
       <label for="pin">PIN:</label>
       <input type="text" id="pin" name="pin"/><br></br>
-      <a href='../HomePage'>Log In</a>
+      <a className="btn" href='../HomePage'>Log In</a>
     </div>
-    <div class="btn">
-    <a href='app/src/containers/add_user.js'>Add New User</a>
+    <div className='centered'>
+      <a className="btn" href='app/src/containers/add_user.js'>Add New User</a>
     </div>
 
   </div>

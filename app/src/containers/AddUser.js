@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 import '../assets/css/add_user.css';
 
-class new_user_data extends Component {
+class add_user extends Component {
   render() {
     return (
       <div bg-color='#27251F'>
-        <div class='green-bg'>
+        <div className='green-bg'>
             <p>SIEMA</p>
         </div>
 
@@ -15,4 +15,4 @@ class new_user_data extends Component {
   }
 }
 
-export default new_user_data;
+export default add_user;

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-import '../assets/css/App.css';
+import '../assets/css/app.css';
 
 import LogIn from '../components/App/HomePage.jsx';
 
 class App extends Component {
   render() {
     return (
-      <div bg-color='#27251F'>
-        <div class='green-bg'>
-          <LogIn />
+        <div className='dark-bg'>
+          <div className='green-bg'>
+            <LogIn />
+          </div>
         </div>
-      </div>
     );
   }
 }
