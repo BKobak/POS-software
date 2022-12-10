@@ -15,10 +15,11 @@ if ( process.defaultApp || /[\\/]electron-prebuilt[\\/]/.test(process.execPath) 
   dev = true;
 }
 
+
 function createWindow() {
   // Create the browser window
   mainWindow = new BrowserWindow({
-    fullscreen:true,
+    //fullscreen:true,
     frame: false,
     show: false,
   });

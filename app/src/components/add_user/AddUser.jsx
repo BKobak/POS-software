@@ -1,11 +1,15 @@
 import React from 'react';
 
-function add_user () {
+function AddUser () {
   return(
   <div>
-    <h1>SIEMA ENIU</h1>
+    <h1>Hello</h1>
     <div class="login-bg">
-      <h2>Log In</h2>
+      <h2>Add New User</h2>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"/><br></br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"/><br></br>
       <label for="id">User ID:</label>
       <input type="text" id="id" name="id"/><br></br>
       <label for="pin">PIN:</label>
@@ -15,4 +19,4 @@ function add_user () {
   </div>
   )
 }
-export default add_user;
+export default AddUser;

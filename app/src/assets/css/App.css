@@ -14,16 +14,23 @@
   border-radius: 25px;
   padding: 5px;
   margin: 2%;
-  position: relative;
+  position: sticky;
   border-bottom: 0%;
+  width: auto;
+  height: auto;
+  
+  
 }
 .login-bg{
   position: relative;
+  align-self: center;
   background-color: #27251F;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
-  margin-left: 50vh;
-  margin-right: 50vh;
+ /* margin-top: 10vh;
+  margin-bottom: 20vh;*/
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 350px;
   border-radius: 10px;
   padding: 15px;
 
@@ -53,6 +60,7 @@
   justify-content: center;
   align-items: center;
 }
+
 h1{
   font-size: 100px;
   font-family: 'Times New Roman', Times, serif;
