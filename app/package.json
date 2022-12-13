@@ -29,6 +29,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.15",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
