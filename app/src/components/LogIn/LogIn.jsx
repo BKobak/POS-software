@@ -1,29 +1,92 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function LogIn () {
-  return(
-  <div>
-    <h1>Welcome</h1>
-    <div className="login-bg">
-      <h2>Log In</h2>
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" className="bi-person-fill" viewBox="0 0 20 15">
-        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-      </svg>
-      <label htmlFor="id">User ID:</label>
-      <input type="text" id="id" name="id"/><br></br>
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" className="bi-lock-fill" viewBox="0 0 20 15">
-        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
-      </svg>
-      <label htmlFor="pin">PIN:</label>
-      <input type="text" id="pin" name="pin"/><br></br>
-      <a className="btn" href='../HomePage'>Log In</a>
-    </div>
-    <div className="centered">
-      <a className="btn" href="../add_user/AddUser.jsx">Add New User</a>
-    </div>
+// Install React Helmet: npm i react-helmet
+import { Helmet } from 'react-helmet';
 
-  </div>
-  )
+function LogIn() {
+
+  function pinIconClick() {
+    // Initialize variables
+    const pwShowHide = document.querySelectorAll(".showHidePw"),
+    pwFields = document.querySelectorAll(".password");
+    
+    // JS code to show/hide password and change icon
+    pwShowHide.forEach(eyeIcon => {
+      eyeIcon.addEventListener("click", ()=>{
+        pwFields.forEach(pwField =>{
+          // Change from hidden mode to view mode.
+          if(pwField.type === "password"){
+            pwField.type = "text";
+            
+            // Replace the 'EyeSlash' Icon with the 'Eye' Icon
+            pwShowHide.forEach(icon => {
+              icon.classList.replace("uil-eye-slash", "uil-eye");
+            })
+          }else{
+            // Change from view mode to hidden mode
+            pwField.type = "password";
+            // Replace the 'Eye' Icon with the 'EyeSlash' Icon
+            pwShowHide.forEach(icon => {
+              icon.classList.replace("uil-eye", "uil-eye-slash");
+            })
+          }
+        })
+      })
+    })
+  }
+  return (
+    <div>
+      <Helmet>
+        {/* Required meta tags */}
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        {/* Set the tab title */}
+        <title>Welcome!</title>
+        {/* Reference the Iconscout CSS Stylesheet */}
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
+      </Helmet>
+      {/* Initialize the 'Welcome' container/box */}
+      <div className="container">
+        <div className="form">
+          <div className="form-login">
+            <span className="title">WELCOME!</span>
+
+            {/* Establish & format user textboxes */}
+            <form action="#">
+              {/* Format the User ID textbox */}
+              <div className="input-field">
+                <input type="text" id="id" className="form-input" autoComplete="off" placeholder=" " required/>
+                <label htmlFor="id" className="form-label">YOUR ID</label>
+                <i className="uil uil-user icon"></i>
+              </div>
+
+              {/* Format the User Pin textbox */}
+              <div className="input-field">
+                <input type="password" id="pin" className="password form-input" autoComplete="off" placeholder=" " required/>
+                <label htmlFor="pin" className="form-label">YOUR PIN</label>
+                <i className="uil uil-lock-alt icon"></i>
+                <i className="uil uil-eye-slash showHidePw" onClick={() => pinIconClick()}></i>
+              </div>
+
+              {/* Form the button that activates a Login */}
+              <div className="input-field button">
+                <input type="button" value="Login Now"/>
+              </div>
+            </form>
+
+            {/* Provide a link to a new form for User Registry */}
+            <div className="register-new-user">
+              <span className="text">New User?&nbsp;
+                <a href="../add_user/AddUser" className="text register-text">Register New User</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
+
 export default LogIn;

@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-
-import '../assets/css/app.css';
-
+// Import styles sheet
+import '../assets/css/login.css';
+// Import Login page format from '../components/LogIn/LogIn.jsx'
 import LogIn from '../components/LogIn/LogIn.jsx';
 
 class LogInCont extends Component {
   render() {
     return (
-        <div className='dark-bg'>
-          <div className='green-bg'>
-            <LogIn />
-          </div>
+        <div>
+          <LogIn />
         </div>
     );
   }

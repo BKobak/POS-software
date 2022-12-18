@@ -1,4 +1,43 @@
+.white-bg{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 3%;
+    position: sticky;
+    border-bottom: 0%;
+    width: auto;
+    height: auto;  
+}
+.green-bg{
+  background-color: #00704A;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.user-details{
+    margin: 50px;
+}
 .btn {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #212529;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 0.375rem;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
     display: inline-block;
     padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
     font-family: var(--bs-btn-font-family);
@@ -18,6 +57,22 @@
     background-color: var(--bs-btn-bg);
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.btn-green {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #198754;
+    --bs-btn-border-color: #198754;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #157347;
+    --bs-btn-hover-border-color: #146c43;
+    --bs-btn-focus-shadow-rgb: 60,153,110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #146c43;
+    --bs-btn-active-border-color: #13653f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #198754;
+    --bs-btn-disabled-border-color: #198754;
+}
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
@@ -31,25 +86,9 @@ button, select {
 .bd-example>.btn, .bd-example>.btn-group {
     margin: 0.25rem 0.125rem;
 }
-.btn-light {
-    --bs-btn-color: #000;
-    --bs-btn-bg: #f8f9fa;
-    --bs-btn-border-color: #f8f9fa;
-    --bs-btn-hover-color: #000;
-    --bs-btn-hover-bg: #d3d4d5;
-    --bs-btn-hover-border-color: #c6c7c8;
-    --bs-btn-focus-shadow-rgb: 211,212,213;
-    --bs-btn-active-color: #000;
-    --bs-btn-active-bg: #c6c7c8;
-    --bs-btn-active-border-color: #babbbc;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #000;
-    --bs-btn-disabled-bg: #f8f9fa;
-    --bs-btn-disabled-border-color: #f8f9fa;
-}
 .form-select {
     display: block;
-    width: 150px;
+    width: 250px;
     padding: 0.375rem 2.25rem 0.375rem 0.75rem;
     -moz-padding-start: calc(0.75rem - 3px);
     font-size: 1rem;
@@ -69,7 +108,7 @@ button, select {
 }
 .input-window{
     display: block;
-    width: 100px;
+    width: 200px;
     padding: 0.375rem 2.25rem 0.375rem 0.75rem;
     -moz-padding-start: calc(0.75rem - 3px);
     font-size: 1rem;
@@ -87,3 +126,14 @@ button, select {
     -moz-appearance: none;
     appearance: none;    
 }
+label{
+    font-size: 25px;
+    color: #212529;
+    font-family: var(--bs-btn-font-family);
+}
+.h1{
+    color: #212529;
+    font-size: 50px;
+    align-content: center;
+}
+
