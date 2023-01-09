@@ -36,7 +36,7 @@ function LogIn() {
     })
   }
   return (
-    <div>
+    <div className='bb'>
       <Helmet>
         {/* Required meta tags */}
         <meta charset="UTF-8" />
@@ -47,7 +47,7 @@ function LogIn() {
         {/* Reference the Iconscout CSS Stylesheet */}
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
       </Helmet>
-      {/* Initialize the 'Welcome' container/box */}
+      {/* Initialize the 'Welcome' container */}
       <div className="container">
         <div className="form">
           <div className="form-login">

@@ -1,3 +1,126 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cccccc;
+    background-image: url('./images/starbucks-background.jpeg');
+}*/
+
+/* Format the Container */
+.container-class{
+    position: relative;
+    /*max-width: 800px;*/
+    width: 800px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 80px;
+}
+
+.container-class .form{
+    padding: 30px;
+}
+
+/* Format the textboxes */
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 25px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+/* Configure the textboxes to turn to a green hue during cursor hover */
+.form .input-field:hover{
+    border-color: #00704A;
+}
+
+.input-field input{
+    position: absolute;
+    width: 97%;
+    padding: 0 35px; 
+    border: none; 
+    outline: none; 
+    font-size: 16px;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.form-input{
+    position: absolute;
+    width: 97%;
+    padding: 0 35px; 
+    border: none; 
+    outline: none; 
+    font-size: 16px;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+    background: none;
+    z-index: 1;
+}
+
+.form-label{
+    position: absolute;
+    left: 2.5rem;
+    top: 0.7rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: #aaa;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+/* Input focus -- move up label */
+.form-input:focus + .form-label{
+    top: -.5rem;
+    left: 2.5rem;
+    color: #00704A;
+    font-size: .75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/* Input focus -- sticky top label */
+.form-input:not(:placeholder-shown).form-input:not(:focus)+ .form-label{
+    top: -.5rem;
+    left: 1.9rem;
+    font-size: .75rem;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/* Add coloring to the lining when textbox is clicked upon */
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #00704A;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+
+
+
 .white-bg{
     background-color: #fff;
     border-radius: 25px;
@@ -105,6 +228,19 @@ button, select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    font-family: 'Poppins', sans-serif;
+
+    width: 100%;
+    padding: 0 35px; 
+    font-size: 16px;
+    margin-top: 30px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 25px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
 }
 .input-window{
     display: block;
@@ -136,4 +272,3 @@ label{
     font-size: 50px;
     align-content: center;
 }
-

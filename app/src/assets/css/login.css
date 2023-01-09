@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+.bb{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -253,16 +253,4 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-h1{
-  font-size: 100px;
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-  text-align: center;
-  position: relative;
-}
-h2{
-  font-size: 50px;
-  font-weight: bold;
 }

@@ -7,9 +7,7 @@ class AddUserCont extends Component {
   render() {
     return (
       <div className='green-bg'>
-        <div className='white-bg'>
-          <AddUser />
-        </div>
+        <AddUser />
       </div>
     );
   }
