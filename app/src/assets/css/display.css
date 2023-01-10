@@ -1,22 +1,30 @@
 /* Style for the section with order summary */
-.order-summary{
-  height: 100vh;
-  width: 45vh;
+.display-bg{
   background-color: black;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.order-summary{
+  float: left;
+  height: 100vh;
+  width: 370px;
+  position: relative;
 }
 
-.pay-button{
-  display: inline-block
-}
-
-.discount-button{
+.inline-btn{
   display: inline-block;
 }
 
 .display-button{
+  text-decoration: none;
   border: none;
   outline: none;
-  text-decoration: none;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -25,7 +33,6 @@
   position: relative;
   height: 60px;
   width: 140px;
-  outline: none;
   padding: 8px;
   box-sizing: border-box;
   cursor: pointer;
@@ -33,32 +40,26 @@
   top: 11px;
   left: 15px;
   margin: 10px;
-}
-
-.input-field{
-  position: relative;
-  height: 50px;
-  width: 100%;
-  margin-top: 30px;
-  border: 2px solid #aaa;
-  border-radius: 4px;
-  margin: 25px 0;
-  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
   padding: 8px;
   box-sizing: border-box;
-  transition: .3s;   
 }
 
 .order-header{
   color: #fff;
-  margin-top: 3vh;
+  margin-top: 1.5vh;
   margin-left: 15px;
 }
 
 .ordered-items{
   background-color: #fff;
   width: 86%;
-  height: 72%;
+  height: 74%;
   margin-left: 15px;
   margin-top: 10px;
 }
@@ -67,7 +68,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 64px;
+  width: 68px;
   height: 36px;
   display: inline-block;
   position: relative;
@@ -78,7 +79,7 @@
   cursor: pointer;
   background-color: #707070;
   transition: background-color ease 0.3s;
-  top: 20px;
+  top: 15px;
   left: 32vh;
 }
   
@@ -87,18 +88,18 @@
   display: block;
   position: absolute;
   z-index: 2;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   background: #fff;
   left: 4px;
-  top: 4px;
+  top: 3px;
   border-radius: 50%;
-  font: 8px/28px Helvetica;
+  font: 10px/31px Helvetica;
   text-transform: uppercase;
   font-weight: bold;
-  text-indent: -27px;
+  text-indent: -31.5px;
 
-  word-spacing: 37px;
+  word-spacing: 38px;
   color: #fff;
   text-shadow: -1px -1px rgba(0,0,0,0.15);
   white-space: nowrap;
@@ -111,8 +112,20 @@
 }
   
 .toggle:checked:before {
-  left: 32px;
+  left: 34px;
 }
 
 
 /* Style for the section with order summary */
+modify-order{
+  float: left;
+  position: relative;
+  height: 100vh;
+  width: 150px;
+}
+
+.modify-window{
+  background: #fff;
+  width: 100px;
+  height: 80vh;
+}

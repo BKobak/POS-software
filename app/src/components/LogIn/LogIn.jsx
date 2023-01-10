@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// Install React Helmet: npm i react-helmet
 import { Helmet } from 'react-helmet';
 
 function LogIn() {
@@ -79,7 +77,7 @@ function LogIn() {
             {/* Provide a link to a new form for User Registry */}
             <div className="register-new-user">
               <span className="text">New User?&nbsp;
-                <a href="../add_user/AddUser" className="text register-text">Register New User</a>
+                <a href="../add_user/AddUser.jsx" className="text register-text">Register New User</a>
               </span>
             </div>
           </div>

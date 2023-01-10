@@ -7,8 +7,9 @@ import DisplayCont from './Display';
 class App extends Component {
   render() {
     return (
-      <DisplayCont />
-      //<LogInCont />
+      //<DisplayCont />
+      <LogInCont />
+      //<AddUserCont />
     );
   }
 }
