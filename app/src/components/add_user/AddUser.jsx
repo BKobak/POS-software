@@ -10,7 +10,8 @@ function AddUser () {
   }
 
   const AddUserBtn =() => {
-
+    //...
+    navigate("/");
   }
     
 

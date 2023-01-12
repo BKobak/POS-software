@@ -15,6 +15,9 @@
     justify-content: center;
     background-color: #cccccc;
     background-image: url('./images/starbucks-background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Format the 'Welcome' Container */

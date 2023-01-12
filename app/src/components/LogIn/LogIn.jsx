@@ -11,6 +11,11 @@ function LogIn() {
     navigate("/adduser")
   }
 
+  const LogInBtn = () => {
+    //...
+    navigate("/display");
+  }
+
   function pinIconClick() {
     // Initialize variables
     const pwShowHide = document.querySelectorAll(".showHidePw"),
@@ -77,14 +82,14 @@ function LogIn() {
 
               {/* Form the button that activates a Login */}
               <div className="input-field button">
-                <input type="button" value="Login Now"/>
+                <input onClick={LogInBtn} type="button" value="Login Now"/>
               </div>
             </form>
 
             {/* Provide a link to a new form for User Registry */}
             <div className="register-new-user">
               <span className="text">New User?&nbsp;
-                <button onClick={toAddUser} className="text register-text">Register New User</button>
+                <a onClick={toAddUser} className="text register-text">Register New User</a>
               </span>
             </div>
           </div>
