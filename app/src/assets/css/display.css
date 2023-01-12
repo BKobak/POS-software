@@ -6,7 +6,7 @@
 .order-summary{
   float: left;
   height: 100vh;
-  width: 370px;
+  width: 365px;
   position: relative;
 }
 
@@ -54,7 +54,7 @@
 
 .ordered-items{
   background-color: #fff;
-  width: 86%;
+  width: 88%;
   height: 74%;
   margin-left: 15px;
   margin-top: 10px;
@@ -115,13 +115,22 @@
 /* Style for the section with order summary */
 .modify-window{
   background: #fff;
-  width: 100px;
-  height: 80vh;
   margin-top: 13vh;
   width: 100px;
   height: 74%;
 }
 
 .search-btn{
-  margin-left: 600px;
+  position: fixed;
+  top: 15px;
+  width: auto;
+  height: 60px;
+}
+
+.options-btn{
+  margin-top: 30px;
+  margin-left: 6px;
+  width: 86%;
+  background-color: #707070;
+
 }
