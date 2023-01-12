@@ -1,9 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function AddUser () {
+
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate("/")
+  }
+
+  const AddUserBtn =() => {
+
+  }
+    
+
+
   return(
     <div>
-      
       {/* Initialize the container*/}
       <div className="add-user-container-class">
         <div className="add-user-form">
@@ -40,11 +53,11 @@ function AddUser () {
               
               {/* Form the button that creates new user */}
               <div className='inline-btn'>
-                  <input className='btn-green' type="button" value="Add User"/>
+                  <input onClick={AddUserBtn} className='btn-green' type="button" value="Add User"/>
               </div>
               {/* Form the button that back to the previous page */}
               <div className='inline-btn'>
-                  <input className='btn-green' type="button" value="Back"/>
+                  <input onClick={goBack} className='btn-green' type="button" value="Back"/>
               </div>
 
           </div>

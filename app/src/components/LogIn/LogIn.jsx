@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 
 function LogIn() {
+
+  const navigate = useNavigate();
+
+  const toAddUser = () => {
+    navigate("/adduser")
+  }
 
   function pinIconClick() {
     // Initialize variables
@@ -77,7 +84,7 @@ function LogIn() {
             {/* Provide a link to a new form for User Registry */}
             <div className="register-new-user">
               <span className="text">New User?&nbsp;
-                <a href="../add_user/AddUser.jsx" className="text register-text">Register New User</a>
+                <button onClick={toAddUser} className="text register-text">Register New User</button>
               </span>
             </div>
           </div>

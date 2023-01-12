@@ -2,8 +2,8 @@ import React from 'react';
 
 function Display () {
   return(
-    <div className='display-bg'>
-        <section className='order-summary'>
+    <div className='dark-bg'>
+        <section className='order-summary clear'>
             {/* Toggle with "Here" and "Go" options */}
             <label className="switch">
                 <input className="toggle" type="checkbox" />
@@ -18,27 +18,26 @@ function Display () {
             {/* Buttons linked to Discount and Pay pages */}
             <div>
                 <div className='inline-btn'>
-                    <input className="display-button" type="button" value="Discount"/>
+                    <input className="display-button pay-btn" type="button" value="Discount"/>
                 </div>
                 <div className='inline-btn'>
-                    <input className="display-button" type="button" value="Pay"/>
+                    <input className="display-button pay-btn" type="button" value="Pay"/>
                 </div>
             </div>
         </section>
             
-        <section className='modify-order'>
-            <h3 className='order-header'>Hello</h3>
+        <section className='modify-window clear'>
             <div>
-                
+                <input className="display-button search-btn" type="button" value="Search"/>
             </div>
 
         </section>
         
-        <section>
+        <section className='clear'>
             
         </section>
 
-        <section>
+        <section className='clear'>
 
         </section>
     </div>
