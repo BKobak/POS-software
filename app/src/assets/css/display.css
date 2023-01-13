@@ -1,5 +1,6 @@
 /* Style for the section with order summary */
 .clear{
+  float: left;
   overflow: hidden;
 }
 
@@ -42,13 +43,13 @@
 }
 
 .pay-btn{
-  top: 11px;
+  top: 75vh;
   left: 15px;
 }
 
 .order-header{
   color: #fff;
-  margin-top: 1.5vh;
+  margin-top: 2vh;
   margin-left: 15px;
 }
 
@@ -57,7 +58,8 @@
   width: 88%;
   height: 74%;
   margin-left: 15px;
-  margin-top: 10px;
+  margin-top: 1vh;
+  position:absolute;
 }
 
 .toggle {
@@ -75,7 +77,7 @@
   cursor: pointer;
   background-color: #707070;
   transition: background-color ease 0.3s;
-  top: 15px;
+  top: 2.5vh;
   left: 32vh;
 }
   
@@ -114,6 +116,7 @@
 
 /* Style for the section with order summary */
 .modify-window{
+  float: left;
   background: #fff;
   margin-top: 13vh;
   width: 100px;
@@ -121,9 +124,9 @@
 }
 
 .search-btn{
-  position: fixed;
+  position: absolute;
   top: 15px;
-  width: auto;
+  width: 80px;
   height: 60px;
 }
 
@@ -132,5 +135,16 @@
   margin-left: 6px;
   width: 86%;
   background-color: #707070;
-
 }
+
+.categories-section{
+  background: transparent;
+  width: 67.6%;
+  height: 13vh;
+  margin-left: 495px;
+  margin-top: -100vh;
+  background-color: #707070;
+}
+/*
+.menu-section{
+}*/
