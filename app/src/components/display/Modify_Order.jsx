@@ -9,13 +9,13 @@ function Modify_Order() {
                     <label htmlFor='checkbox_iced'>
                         Iced
                     </label>
-                    <input type="checkbox" value="" id='checkbox_iced'/>
+                    <input className="check" type="checkbox" value="" id='checkbox_iced'/>
 
                     {/* Checkbox for 'Decaf' option */}
                     <label htmlFor='checkbox_decaf'>
                         Decaf
                     </label>
-                    <input type="checkbox" value="" id='checkbox_decaf'/>
+                    <input className="check" type="checkbox" value="" id='checkbox_decaf'/>
 
                     <button className='display-button options-btn'>Milk</button>
                     <button className='display-button options-btn'>Syrup</button>

@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 
 function LogIn() {
-
   const navigate = useNavigate();
 
   const toAddUser = () => {

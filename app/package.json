@@ -38,6 +38,7 @@
     "nodemon": "^2.0.20",
     "react-bootstrap": "^2.7.0",
     "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.4.4"
+    "react-router-dom": "^6.4.4",
+    "styled-components": "^5.3.6"
   }
 }

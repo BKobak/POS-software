@@ -2,6 +2,8 @@ import React from 'react';
 import Order_Window from './Order_Window.jsx';
 import Modify_Order from './Modify_Order.jsx';
 
+import Drink_Page from '../drinks/drink_page.jsx';
+
 function Display () {
   return(
     <div className='dark-bg'>
@@ -18,7 +20,7 @@ function Display () {
         </section>
 
         <section className='menu-section clear'>
-
+          <Drink_Page/>
         </section>
     </div>
   )
