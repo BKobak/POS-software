@@ -1,6 +1,7 @@
 import React from 'react';
 import Order_Window from './Order_Window.jsx';
 import Modify_Order from './Modify_Order.jsx';
+import NavBar from './NavBar.jsx';
 
 import Drink_Page from '../drinks/drink_page.jsx';
 
@@ -16,7 +17,7 @@ function Display () {
         </section>
         
         <section className='categories-section clear'>
-            
+            <NavBar/>
         </section>
 
         <section className='menu-section clear'>

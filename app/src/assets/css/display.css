@@ -58,7 +58,7 @@
   height: 74%;
   margin-left: 15px;
   margin-top: 1vh;
-  position:absolute;
+  position: absolute;
 }
 
 .toggle {
@@ -194,3 +194,47 @@
 Table{
   margin: 10px;
 }
+
+
+
+header {
+  background-color: #333;
+  height: 500px;
+}
+
+/*   Start navigation bar   */
+
+nav {
+  height: 80px;
+  background-color: #11100e;
+  border-bottom: 1px solid #707070;
+}
+.logo {
+  padding: 10px;
+  width: auto;
+  float: left;
+}
+.logo img {
+  height: 55px;
+}
+.list-item {
+  float: left;
+  margin-top: 17px;
+}
+.list-item li {
+  float: left;
+  padding: 13px 13px;
+  font-size: 25px;
+  border-radius: 3px;
+  margin-left: 60px;
+  transition: all .7s ease-in-out;
+}
+.list-item li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #eee;
+}
+.list-item li:hover {
+  background-color: #00704A;
+}
+
