@@ -39,6 +39,7 @@
     "react-bootstrap": "^2.7.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.4.4",
+    "reactstrap": "^9.1.5",
     "styled-components": "^5.3.6"
   }
 }
