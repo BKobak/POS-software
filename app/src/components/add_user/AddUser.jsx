@@ -1,7 +1,36 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function AddUser () {
+  function AddUserBtn(event){
+    event.preventDefault();
+    const newUser = {
+      firstName: document.getElementById("fname").value, 
+      lastName: document.getElementById("lname").value,
+      role: document.getElementById("role").value,
+      id: document.getElementById("id").value,
+      pin: document.getElementById("pin").value 
+    }
+    axios.post('/create_user', newUser);
+    navigate("/");
+  }
+  const [user, setUser] = useState([{
+    firstName: "",
+    lastName: "",
+    role: "",
+    id: "",
+    pin: ""
+  }]);
+
+  useEffect(() => {
+    fetch("/create_user").then(res => {
+      if(res.ok) {
+        return res.json()
+      }
+    }).then(jsonRes => setUser(jsonRes));
+  });
+
 
   const navigate = useNavigate();
 
@@ -9,61 +38,29 @@ function AddUser () {
     navigate("/")
   }
 
-  const AddUserBtn =() => {
-    //...
-    navigate("/");
-  }
-    
-
 
   return(
     <div>
-      {/* Initialize the container*/}
-      <div className="add-user-container-class">
-        <div className="add-user-form">
-          <div className="add-user-form-login">
-            <h1 className='h1'>Add New User</h1>
-
-              {/* Format the User First Name textbox */}
-              <div className="add-user-input-field">
-                <input type="text" id="fname" className="form-input" autoComplete="off" placeholder=" " required/>
-                <label htmlFor="fname" className="form-label">FIRST NAME</label>
-              </div>
-
-              {/* Format the User Last Name textbox */}
-              <div className="add-user-input-field">
-                <input type="text" id="lname" className="form-input" autoComplete="off" placeholder=" " required/>
-                <label htmlFor="lname" className="form-label">LAST NAME</label>
-              </div>
-
-              {/* Format the User Role textbox */}
-              <div>
-                <select className="form-select" id="role">
-                  <option defaultValue>Select role</option>
-                  <option value="1">Manager</option>
-                  <option value="2">Supervisor</option>
-                  <option value="3">Barista</option>
-                </select>
-              </div>
-
-              {/* Format the User Pin textbox */}
-              <div className="add-user-input-field">
-                <input type="password" id="pin" className="password form-input" autoComplete="off" placeholder=" " required/>
-                <label htmlFor="pin" className="form-label">YOUR PIN</label>
-              </div>
-              
-              {/* Form the button that creates new user */}
-              <div className='inline-btn'>
-                  <input onClick={AddUserBtn} className='btn-green' type="button" value="Add User"/>
-              </div>
-              {/* Form the button that back to the previous page */}
-              <div className='inline-btn'>
-                  <input onClick={goBack} className='btn-green' type="button" value="Back"/>
-              </div>
-
-          </div>
+      
+      {user.map((user) => (
+        <div>
+          <form>
+            <label>First Name</label>
+            <input type="text" id="fname" name="fname"/>
+            <label>Last Name</label>
+            <input type="text" id="lname" name="lname" />
+            <label>Role</label>
+            <input type="text" id="role" name="role" />
+            <label>ID</label>
+            <input type="text" id="id" name="id" />
+            <label>PIN</label>
+            <input type="text" id="pin" name="pin" />
+            <button onClick={AddUserBtn}>Add User</button>
+            <button onClick={goBack}>Back</button>
+          </form>
         </div>
-      </div>
+      ))}
+
     </div>
   )
 }
