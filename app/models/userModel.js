@@ -1,14 +1,13 @@
-const { stringifyRequest } = require('loader-utils');
 const mongoose = require('mongoose');
 
 const usersSchema = {
-    firstName: String,
-    lastName: String,
+    first_name: String,
+    last_name: String,
     role: String,
-    id: Int32Array,
-    pin: Int32Array
+    userId: Int32Array,
+    PIN: Int32Array
 }
 
-const User = mongoose.model('User', usersSchema);
+const User = mongoose.model('Users', usersSchema);
 
 module.exports = User;

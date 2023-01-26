@@ -1,4 +1,4 @@
-const express = require('express');
+{/*const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -24,3 +24,5 @@ app.use('/', require('./routes/userRoute'));
 app.listen(port, () => {
     console.log('Server is running on port: ${port}.');
 });
+*/}
+

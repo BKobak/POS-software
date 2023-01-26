@@ -37,11 +37,13 @@
     "express": "^4.18.2",
     "mongodb": "^4.13.0",
     "mongoose": "^6.8.0",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.20",
     "react-bootstrap": "^2.7.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.4.4",
     "reactstrap": "^9.1.5",
+    "request": "^2.79.0",
     "styled-components": "^5.3.6"
   }
 }
