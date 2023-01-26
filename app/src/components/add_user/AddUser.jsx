@@ -23,7 +23,7 @@ function AddUser () {
     });
   };
 
-  {/*function AddUserBtn () {
+  function AddUserBtn () {
     
     const user = {
       first_name: document.getElementById('first_name').value,
@@ -56,25 +56,8 @@ function AddUser () {
         [name]: value
       };
     });
-  }*/}
-  {/*
-  const [user, setUser] = useState([{
-    first_name: "",
-    last_name: "",
-    role: "",
-    userId: "",
-    PIN: ""
-  }]);
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setUser(prevUser => {
-      return {
-        prevUser,
-        [name]: value
-      };
-    });
-  };
+  }
+  
 
   function AddUserBtn(event){
     event.preventDefault();
@@ -95,7 +78,7 @@ function AddUser () {
         return res.json()
       }
     }).then(jsonRes => setUser(jsonRes));
-  });*/}
+  });
 
   const navigate = useNavigate();
 
@@ -106,7 +89,7 @@ function AddUser () {
   return(
     <div>
         <div>
-          <form action='/add_user' method='POST'>
+          <form action='/create_user' method='POST'>
             <label>First Name</label>
             <input onChange={(e) => {setFirstName(e.target.value)}} type="text" id="forename"/>
             <label>Last Name</label>

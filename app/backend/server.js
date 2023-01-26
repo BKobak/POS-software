@@ -1,4 +1,4 @@
-{/*const express = require('express');
+const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -12,7 +12,7 @@ app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 mongoose.set('strictQuery', true);
-mongoose.connect(uri);
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
 connection.once('open', () => {
@@ -24,5 +24,4 @@ app.use('/', require('./routes/userRoute'));
 app.listen(port, () => {
     console.log('Server is running on port: ${port}.');
 });
-*/}
 
