@@ -1,3 +1,4 @@
+{/*
 const mongoose = require('mongoose');
 
 const usersSchema = {
@@ -11,3 +12,4 @@ const usersSchema = {
 const User = mongoose.model('Users', usersSchema);
 
 module.exports = User;
+*/}

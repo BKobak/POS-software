@@ -23,7 +23,7 @@ class App extends Component {
       user: 'root',
   });
 
-  newapp.post('/add_user', async function(req, res) {
+  newapp.post('/create_user', async function(req, res) {
 
     const forename = req.body.firstName;
     const surname = req.body.lastName;
