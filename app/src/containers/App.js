@@ -14,7 +14,7 @@ class App extends Component {
   const app = express()
   const newapp = app.use(express.json());
   // Set port
-  const port = 3306;
+  const port = 3001;
 
   // Create connection
   const connection = mysql.createConnection({
@@ -23,7 +23,7 @@ class App extends Component {
       user: 'root',
   });
 
-  newapp.post('/create_user', async function(req, res) {
+  newapp.post('https://localhost:3306/create_user', async function(req, res) {
 
     const forename = req.body.firstName;
     const surname = req.body.lastName;

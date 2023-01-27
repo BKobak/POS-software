@@ -11,7 +11,7 @@ function AddUser () {
   const [PIN, setPIN] = useState('');
 
   const register = () => {
-    axios.post('http://localhost:3306/add_user', {
+    axios.post('http://localhost:3306/create_user', {
       forename: forename,
       surname: surname,
       role: role,
@@ -73,17 +73,17 @@ function AddUser () {
       id: document.getElementById("userId").value,
       pin: document.getElementById("PIN").value 
     }
-    axios.post('cluster0-shard-00-02.iovn5.mongodb.net:27017/create_user', newUser);
+    axios.post('http://localhost:3306/create_user', newUser);
     navigate("/");
   }
-
+  {/*
   useEffect(() => {
     fetch("/create_user").then(res => {
       if(res.ok) {
         return res.json()
       }
     }).then(jsonRes => setUser(jsonRes));
-  });
+  });*/}
 
   const navigate = useNavigate();
 
