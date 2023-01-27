@@ -23,6 +23,7 @@ function AddUser () {
     });
   };
 
+  {/*
   function AddUserBtn () {
     
     const user = {
@@ -41,13 +42,6 @@ function AddUser () {
     });
   }
 
-  const [user, setUser] = useState([{
-    first_name: "",
-    last_name: "",
-    role: "",
-    userId: "",
-    PIN: ""
-  }]);
   function handleChange (event) {
     const { name, value } = event.target;
     setUser(prevUser => {
@@ -57,6 +51,17 @@ function AddUser () {
       };
     });
   }
+
+*/}
+
+  const [user, setUser] = useState([{
+    first_name: "",
+    last_name: "",
+    role: "",
+    userId: "",
+    PIN: ""
+  }]);
+  
   
 
   function AddUserBtn(event){
@@ -88,24 +93,55 @@ function AddUser () {
 
   return(
     <div>
-        <div>
-          <form action='/create_user' method='POST'>
-            <label>First Name</label>
-            <input onChange={(e) => {setFirstName(e.target.value)}} type="text" id="forename"/>
-            <label>Last Name</label>
-            <input onChange={(e) => {setLastName(e.target.value)}} type="text" id="surname"/>
-            <label>Role</label>
-            <input onChange={(e) => {setRole(e.target.value)}} type="text" id="role"/>
-            <label>ID</label>
-            <input onChange={(e) => {setUserId(e.target.value)}} type="text" id="id"/>
-            <label>PIN</label>
-            <input onChange={(e)=> {setPIN(e.target.value)}} type="text" id="pin"/>
-            <button onClick={register}>Add User</button>
-            <button onClick={goBack}>Back</button>
-          </form>
-        </div>
+      {/* Initialize the container*/}
+      <div className="add-user-container-class">
+        <div className="add-user-form">
+          <div className="add-user-form-login">
+            <h1 className='h1'>Add New User</h1>
 
+              {/* Format the User First Name textbox */}
+              <div className="add-user-input-field">
+                <input onChange={(e) => {setFirstName(e.target.value)}} type="text" id="forename" className="form-input" autoComplete="off" placeholder=" " required/>
+                <label htmlFor="fname" className="form-label">FIRST NAME</label>
+              </div>
+
+              {/* Format the User Last Name textbox */}
+              <div className="add-user-input-field">
+                <input onChange={(e) => {setFirstName(e.target.value)}} type="text" id="surname" className="form-input" autoComplete="off" placeholder=" " required/>
+                <label htmlFor="lname" className="form-label">LAST NAME</label>
+              </div>
+
+              {/* Format the User Role textbox */}
+              <div>
+                <select onChange={(e) => {setFirstName(e.target.value)}} className="form-select" id="role">
+                  <option defaultValue>Select role</option>
+                  <option value="1">Manager</option>
+                  <option value="2">Supervisor</option>
+                  <option value="3">Barista</option>
+                </select>
+              </div>
+
+              {/* Format the User Pin textbox */}
+              <div className="add-user-input-field">
+                <input onChange={(e) => {setFirstName(e.target.value)}} type="password" id="pin" className="password form-input" autoComplete="off" placeholder=" " required/>
+                <label htmlFor="pin" className="form-label">YOUR PIN</label>
+              </div>
+
+              {/* Form the button that creates new user */}
+              <div className='inline-btn'>
+                  <input onClick={AddUserBtn} className='btn-green' type="button" value="Add User"/>
+              </div>
+              {/* Form the button that back to the previous page */}
+              <div className='inline-btn'>
+                  <input onClick={goBack} className='btn-green' type="button" value="Back"/>
+              </div>
+
+            </div>
+          <div>
+        </div>
+      </div>
     </div>
+  </div>
   )
 }
 export default AddUser;
