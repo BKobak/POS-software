@@ -1,7 +1,8 @@
 {
   "name": "point-of-sale",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Barbara Kobak",
+  "private": true,
   "license": "GNU",
   "main": "main.js",
   "scripts": {
