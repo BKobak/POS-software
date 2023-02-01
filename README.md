@@ -21,7 +21,15 @@ Point-Of-Sale desktop application for coffee shop.
 <br/>
 
 ## Getting Started
-<br/>
+
+Clone the GitHub repository using code: ```https://github.com/BKobak/POS-software.git```
+
+Navigate to the app folder using ```cd app``` in terminal.
+Next, download packages and dependencies by ```npm install```.
+
+To run the program use: ```npm run dev```.
+
+
 
 ## License
 Distributed under the GNU General Public License.
