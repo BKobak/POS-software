@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 var app = express();
 const db = require('./backend/db.js');
@@ -58,4 +58,4 @@ app.post("/login", function(req, res) {
         res.send(results);
     });
 });
-
+*/}
