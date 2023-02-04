@@ -6,14 +6,14 @@ const helpers = require('./config/helpers');
 
 
 // Config directories
-const SRC_DIR = path.resolve(__dirname, 'src');
+const SRC_DIR = path.resolve(__dirname, 'client');
 const OUTPUT_DIR = path.resolve(__dirname, 'dist');
 
 // Any directories you will be adding code/files into, need to be added to this array so webpack will pick them up
 const defaultInclude = [SRC_DIR];
 
 module.exports = {
-  entry: SRC_DIR + '/index.js',
+  entry: SRC_DIR + '/src/index.js',
   output: {
     path: OUTPUT_DIR,
     publicPath: '/',
@@ -46,7 +46,7 @@ module.exports = {
   target: 'electron-renderer',
   plugins: [
     new HtmlWebpackPlugin({
-      template: helpers.root('public/index.html'),
+      template: helpers.root('client/public/index.html'),
       inject: 'body'
     }),
     new webpack.DefinePlugin({
