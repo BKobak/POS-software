@@ -1,9 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Modify_Order() {
+
+    // Define navigate function
+    const navigate = useNavigate();
+
+    // Button to submit order
+    function Submit_Btn() {
+        navigate('/');
+    };
+
     return(
         <div>
-                <input className="display-button search-btn" type="button" value="Search"/>
+                <input className="display-button search-btn" onClick={Submit_Btn} type="button" value="Search"/>
                 <div>
                     {/* Checkbox for 'Iced' option */}
                     <label className="centered" htmlFor='checkbox_iced'>
