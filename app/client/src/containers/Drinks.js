@@ -1,29 +1,12 @@
-import React, { Component } from 'react'; // Import React and Component from react
-import Drink_Page from '../components/drinks/Drink_Page.jsx';
+import React from 'react'; // Import React and Component from react
 
-//import { MongoClient } from 'mongodb';
+import Drinks_Nav from '../components/drinks/Drinks_NavBar.jsx';
 
-/*export const getStaticProps = async context => {
-    const mongoClient = new MongoClient(
-      "mongodb+srv://SE:pos123@cluster0.iovn5.mongodb.net/test"
-    )
-    const data = await mongoClient
-      .db()
-      .collection("Drinks")
-      .findOne({})
-      .toArray()
-    console.log("!!!", data)
-  }
-*/
-
-class DrinksCont extends Component { // Create a class called Drinks that extends Component
-
-    render() { // Render a div with the Drink_Page component
-    return (
-      <div>
-        <Drink_Page/>
+function Drinks() { // Create a class called Drinks that extends Component
+  return (
+      <div className='clear'>
+        <Drinks_Nav/>
       </div>
-    );
-  }
-}
-export default DrinksCont; // Export the class
+  );
+};
+export default Drinks; // Export the class

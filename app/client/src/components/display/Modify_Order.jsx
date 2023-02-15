@@ -13,10 +13,10 @@ function Modify_Order() {
 
     return(
         <div>
-                <input className="display-button search-btn" onClick={Submit_Btn} type="button" value="Search"/>
+                <button className="btn-green search-btn" onClick={Submit_Btn}>Search</button>
                 <div>
                     {/* Checkbox for 'Iced' option */}
-                    <label className="centered" htmlFor='checkbox_iced'>
+                    <label className="centered small-top-margin" htmlFor='checkbox_iced'>
                         Iced
                     </label>
                     <input className="check" type="checkbox" value="" id='checkbox_iced'/>

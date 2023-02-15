@@ -1,3 +1,4 @@
+{/*
 'use strict';
 
 // Import parts of electron to use
@@ -74,3 +75,5 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
+*/}
