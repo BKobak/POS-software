@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import DiscountCont from "../../containers/Discount";
+import Pay from "../../containers/Pay";
 
 function Navbar(){
   const [activePage, setActivePage] = useState("Drink");
@@ -26,11 +27,24 @@ function Navbar(){
           </li>
         </ul>
       </nav>
+
+      {/* Buttons linked to Discount and Pay pages */}
+      <div>
+            <div className='inline-btn'>
+                <input className={activePage === "Discount" ? "active" : "btn-green pay-btn"} onClick={() => handleClick("Discount")} type="button" value="Discount"/>
+            </div>
+            <div className='inline-btn'>
+                <input className={activePage === "Pay" ? "active" : "btn-green pay-btn"} onClick={() => handleClick("Pay")} type="button" value="Pay"/>
+            </div>
+        </div>
+
       <section>
         {activePage === "Drink" && <Drink/>}
         {activePage === "Pastry" && <Pastry/>}
         {activePage === "Chilled" && <Chilled/>}
         {activePage === "Other" && <Other/>}
+        {activePage === "Discount" && <DiscountCont/>}
+        {activePage === "Pay" && <Pay/>}
       </section>
     </div>
   );

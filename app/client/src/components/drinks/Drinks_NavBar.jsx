@@ -95,7 +95,7 @@ function Drinks_Nav() {
                 <li className={activePage === "Tea" ? "active" : ""} onClick={() => handleClick("Tea")}>
                     Tea
                 </li>
-                <li className={activePage === "Tea" ? "active" : ""} onClick={() => handleClick("Other")}>
+                <li className={activePage === "Other" ? "active" : ""} onClick={() => handleClick("Other")}>
                     Other
                 </li>
                 </ul>

@@ -7,13 +7,13 @@ function Modify_Order() {
     const navigate = useNavigate();
 
     // Button to submit order
-    function Submit_Btn() {
+    function LogOut() {
         navigate('/');
     };
 
     return(
         <div>
-                <button className="btn-green search-btn" onClick={Submit_Btn}>Search</button>
+                <button className="btn-green search-btn" onClick={LogOut}>Log Out</button>
                 <div>
                     {/* Checkbox for 'Iced' option */}
                     <label className="centered small-top-margin" htmlFor='checkbox_iced'>

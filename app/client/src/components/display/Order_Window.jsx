@@ -1,15 +1,10 @@
-import React from 'react';
-import { useNavigate } from 'react-router';
-
-import Basket from './Basket';
+import React, { useState } from "react";
 
 function Order_Window () {
-    const navigate = useNavigate();
-    const ToPay = () => {
-        navigate('/pay');
-    };
-    const ToDiscount = () => {
-        navigate('/discount');
+    const [activePage, setActivePage] = useState("Drink");
+
+    const handleClick = (page) => {
+      setActivePage(page);
     };
 
   return(
@@ -25,15 +20,7 @@ function Order_Window () {
             {/*<Basket basket={basket} />1*/}
         </div>
 
-        {/* Buttons linked to Discount and Pay pages */}
-        <div>
-            <div className='inline-btn'>
-                <input onClick={ToDiscount} className="btn-green pay-btn" type="button" value="Discount"/>
-            </div>
-            <div className='inline-btn'>
-                <input onClick={ToPay} className="btn-green pay-btn" type="button" value="Pay"/>
-            </div>
-        </div>
+        
     </div>
 )}
 export default Order_Window;

@@ -5,7 +5,7 @@ import Pay_Method from "../components/pay/payment_method";
 function Pay(){
     
     return(
-        <div className="centered dark-bg">
+        <div>
             <div className="pay-container">
                 <div className="form">
                     <form>
@@ -17,7 +17,7 @@ function Pay(){
                         <div>
                             <Keyboard/>
                         </div>
-                        <div>
+                        <div className="btn-onRight">
                             <button className="btn-green" type="submit">Submit</button>
                             <button className="btn-green" id="print_receipt" /*onclick={window.print()}*/>Print Receipt</button>
                         </div>
