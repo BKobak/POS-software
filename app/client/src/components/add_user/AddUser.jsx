@@ -91,7 +91,7 @@ function AddUserCont() {
             {/* Form the button that activates a Login */}
             <Link to="/">
               <div className="inline-btn">
-                <input type="submit" onClick={() => handleClickButton()} value="Add New User"/>
+                <input type="submit" className='btn-green' onClick={() => handleClickButton()} value="Add User"/>
               </div>
             </Link>
 
