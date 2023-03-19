@@ -27,7 +27,7 @@ Clone the GitHub repository using code: ```https://github.com/BKobak/POS-softwar
 Navigate to the app folder using ```cd app``` in terminal.
 Next, download packages and dependencies by ```npm install```.
 
-To run the program use: ```npm run dev```.
+To run the program use first open Docker Desktop and in VSCode Terminal use: ```docker-compose up```.
 
 
 
