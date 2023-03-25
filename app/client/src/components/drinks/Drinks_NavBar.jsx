@@ -1,7 +1,7 @@
-import React from "react";
+/*import React from "react";
 import { render } from "react-dom";
 import { useState } from "react";
-import Menu from "./Menu";
+import Menu from "app/client/src/containers/Menu.js";
 import { Axios } from "axios";
 
 
@@ -113,3 +113,4 @@ function Drinks_Nav() {
 
 
 export default Drinks_Nav;
+*/

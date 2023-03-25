@@ -1,17 +1,28 @@
-import React from "react";
-import Axios from "axios";
-function Milk() {
-    const milk = Axios.get("http://localhost:3001/milk");
-    console.log(milk);
-    return (
-        <div className="clear">
-            <h1>Milk</h1>
-            <div>
-                
-            </div>
-            
+import React, { useState, useEffect } from 'react';
+import Menu from './Menu';
+import Basket from './Basket';
+import axios from 'axios';
 
-        </div>
-    );
+function Milk() {
+    
+    const [menuItems, setMenuItems] = useState([axios.get('/milk')]);
+    const [basket, setBasket] = useState([]);
+  useEffect(() => {
+    // Make a GET request to retrieve data from the Milk table
+    axios.get('/milk')
+      .then(response => {
+        setMenuItems(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, []);
+
+  return (
+    <div>
+      <Menu menuItems={menuItems} basket={basket} setBasket={setBasket} />
+    </div>
+  );
 }
+
 export default Milk;

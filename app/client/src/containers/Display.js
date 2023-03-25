@@ -2,7 +2,6 @@ import React, {useState} from 'react'; // Import React and Component from react
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
 import Order_Window from '../components/display/Order_Window.jsx';
-import Modify_Order from '../components/display/Modify_Order.jsx';
 import DiscountCont from './Discount.js';
 import Pay from './Pay.js';
 import Drinks from './Drinks.js';
@@ -10,6 +9,9 @@ import Chilled from './Chilled.js'
 import Pastry from './Pastry.js'
 import Other from './Other.js'
 import Milk from './Milk.js'
+import Syrup from './Syrup.js'
+import Topping from './Topping.js'
+import Preparation from './Preparation.js';
 
 function Display() { // Create a class called Drinks that extends Component
   
@@ -81,7 +83,7 @@ function Display() { // Create a class called Drinks that extends Component
             </ul>
           </nav>
 
-          <section>
+          <section className='display-margin'>
             {activePage === "Drink" && <Drinks/>}
             {activePage === "Pastry" && <Pastry/>}
             {activePage === "Chilled" && <Chilled/>}
@@ -89,6 +91,9 @@ function Display() { // Create a class called Drinks that extends Component
             {activePage === "Discount" && <DiscountCont/>}
             {activePage === "Pay" && <Pay/>}
             {activePage === "Milk" && <Milk/>}
+            {activePage === "Syrup" && <Syrup/>}
+            {activePage === "Topping" && <Topping/>}
+            {activePage === "Preparation" && <Preparation/>}
           </section>
         </section>
     </div>

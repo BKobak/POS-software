@@ -29,6 +29,7 @@ function AddUserCont() {
       forename: values.forename,
       surname: values.surname,
       role: values.role,
+      id: values.id,
       pin: values.pin,
     }).then((response) => {
       console.log(response);
@@ -80,6 +81,12 @@ function AddUserCont() {
                   <option value="barista">Barista</option>
                 </select>
                 <label htmlFor="role" className="form-label">USER ROLE</label>
+            </div>
+
+            {/* Format the User Pin textbox */}
+            <div className="add-user-input-field">
+              <input id="id" className="password form-input" autoComplete="off" placeholder=" " onChange={handleChangeValues} name="id" required/>
+              <label htmlFor="id" className="form-label">ID</label>
             </div>
 
             {/* Format the User Pin textbox */}
