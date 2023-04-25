@@ -4,7 +4,7 @@
 Name: David </br>
 Age: 35 </br>
 Occupation: Supervisor in Coffee Shop </br>
-Background: David is a supervisor of coffee shop and is responsible for managing store's daily operations, including POS system. He finds the current system troublesome and would like it to have option to add new employees by himself or at least by store manager so he doesn't have to call help desk everytime they hire somone new. Addittionaly, as a colour-blind person, David finds the current system'colour scheme a bit difficult to navigate. He would prefer a more user-friendly design.
+Background: David is a supervisor of coffee shop and is responsible for managing store's daily operations, including POS system. He finds the current system troublesome and would like it to have option to add new employees by himself or at least by store manager so he doesn't have to call help desk everytime they hire somone new. Additionally, as a colour-blind person, David finds the current system' colour scheme a bit difficult to navigate. He would prefer a more user-friendly design.
 
 <b>Barista</b></br>
 Name: Emily </br>
@@ -16,4 +16,4 @@ Background: Emily is a barista who works at a coffee shop. She's responsible for
 Name: Tom </br>
 Age: 53 </br>
 Occupation: Freelance Writer </br>
-Background: Tom is a loyal custem at the coffee shop. He wants to be be served quickly and efficiently without feeling rushed by the cashier. He thinks that the current till system used by the coffee shop is outdated and makes process of ordering stressful and inconvinient. He'd like the coffee shop to make the system more friendly for cashiers so tehy would serve him quicker.
+Background: Tom is a loyal customer at the coffee shop. He wants to be be served quickly and efficiently without feeling rushed by the cashier. He thinks that the current till's system used by the coffee shop is outdated and makes process of ordering stressful and inconvinient. He'd like the coffee shop to make the system more friendly for cashiers so they would serve him quicker.
