@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Menu from './Menu';
-import Basket from './Basket';
 import axios from 'axios';
 
 function Milk() {
     
     const [menuItems, setMenuItems] = useState([axios.get('/milk')]);
-    const [basket, setBasket] = useState([]);
+    
   useEffect(() => {
     // Make a GET request to retrieve data from the Milk table
-    axios.get('/milk')
+    axios.get('http://localhost:3001/milk')
       .then(response => {
         setMenuItems(response.data);
       })
@@ -20,7 +19,7 @@ function Milk() {
 
   return (
     <div>
-      <Menu menuItems={menuItems} basket={basket} setBasket={setBasket} />
+      <Menu menuItems={menuItems}/>
     </div>
   );
 }

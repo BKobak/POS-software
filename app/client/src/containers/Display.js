@@ -1,6 +1,7 @@
 import React, {useState} from 'react'; // Import React and Component from react
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 
+import ToggleContext from '../context/Toggle.js'; // Import ToggleContext from Toggle.js
 import Order_Window from '../components/display/Order_Window.jsx';
 import DiscountCont from './Discount.js';
 import Pay from './Pay.js';
@@ -13,7 +14,8 @@ import Syrup from './Syrup.js'
 import Topping from './Topping.js'
 import Preparation from './Preparation.js';
 
-function Display() { // Create a class called Drinks that extends Component
+function Display() {
+  const [toggleValue, setToggleValue] = useState(false);
   
   const [activePage, setActivePage] = useState("Drink");
   const handleClick = (page) => {
@@ -31,16 +33,27 @@ function Display() { // Create a class called Drinks that extends Component
   return (
       <div className='dark-bg'>
         <section className='order-summary clear'>
+          <ToggleContext.Provider value={{ toggleValue, setToggleValue }}>
             <Order_Window/>
-            {/* Buttons linked to Discount and Pay pages */}
-        <div>
-            <div className='inline-btn'>
-                <input className={activePage === "Discount" ? "btn-green pay-btn" : "btn-green pay-btn"} onClick={() => handleClick("Discount")} type="button" value="Discount"/>
-            </div>
-            <div className='inline-btn'>
-                <input className={activePage === "Pay" ? "btn-green pay-btn" : "btn-green pay-btn"} onClick={() => handleClick("Pay")} type="button" value="Pay"/>
-            </div>
-        </div>
+          </ToggleContext.Provider>
+          
+          {/* Buttons linked to Discount and Pay pages */}
+          <div>
+              <div className='inline-btn'>
+                  <input className={activePage === "Discount" ? "btn-green pay-btn" : "btn-green pay-btn"} onClick={() => handleClick("Discount")} type="button" value="Discount"/>
+              </div>
+              <div className='inline-btn'>
+                  <input className={activePage === "Pay" ? "btn-green pay-btn" : "btn-green pay-btn"} onClick={() => handleClick("Pay")} type="button" value="Pay"/>
+              </div>
+          </div>
+          <div>
+              <div className='inline-btn'>
+                  <input className="btn-green mod-btn" type="button" value="Copy"/>
+              </div>
+              <div className='inline-btn'>
+                  <input className="btn-green mod-btn" type="button" value="Delete"/>
+              </div>
+          </div>
         </section>
             
         <section className='modify-window clear'>

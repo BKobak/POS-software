@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Menu from './Menu';
-import Basket from './Basket';
 import axios from 'axios';
 
 function Topping() {
@@ -9,7 +8,7 @@ function Topping() {
     const [basket, setBasket] = useState([]);
   useEffect(() => {
     // Make a GET request to retrieve data from the Milk table
-    axios.get('/topping')
+    axios.get('http://localhost:3001/topping')
       .then(response => {
         setMenuItems(response.data);
       })

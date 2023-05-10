@@ -4,13 +4,15 @@ function Keyboard(){
     const [cashReceived, setCashReceived] = useState("");
 
     const handleClick = (event) => {
-      const value = event.target.innerHTML;
+        event.preventDefault(''); // Prevents the page from refreshing.
+
+        const value = event.target.innerHTML;
   
-      if (value === "c") {
-        setCashReceived("");
-      } else {
-        setCashReceived((prevValue) => prevValue + value);
-      }
+        if (value === "c") {
+            setCashReceived("");
+        } else {
+            setCashReceived((prevValue) => prevValue + value);
+        }
     };
     
     return(

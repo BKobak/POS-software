@@ -23,8 +23,8 @@ function Basket({ basket }) {
                 <td>{item.name}</td>
                 <td>£{(item.price * count).toFixed(2)}</td>
               </tr>
-            );
-          })};
+            )
+          })}
   
           <tr>
             <td colSpan="2">Total</td>

@@ -20,7 +20,7 @@ function AddUserCont() {
     setValues(prevValue => ({
       ...prevValue,
       [value.target.name]: value.target.value,
-    })); 
+    }));
   };
 
   // Create a function to handle submit of form info (translated into db).
@@ -74,13 +74,8 @@ function AddUserCont() {
 
             {/* Format the User Role textbox */}
             <div className="add-user-input-field">
-              <select id="role" className="form-input" name="role" required>
-                  <option defaultValue>Select role</option>
-                  <option value="manager">Manager</option>
-                  <option value="supervisor">Supervisor</option>
-                  <option value="barista">Barista</option>
-                </select>
-                <label htmlFor="role" className="form-label">USER ROLE</label>
+              <input id="role" className="form-input" autoComplete="off" placeholder=" " onChange={handleChangeValues} name="role" required/>
+              <label htmlFor="role" className="form-label">USER ROLE</label>
             </div>
 
             {/* Format the User Pin textbox */}
@@ -98,7 +93,8 @@ function AddUserCont() {
             {/* Form the button that activates a Login */}
             <Link to="/">
               <div className="inline-btn">
-                <input type="submit" className='btn-green' onClick={() => handleClickButton()} value="Add User"/>
+              <button className='btn-green' onClick={handleClickButton}>Add User</button>
+
               </div>
             </Link>
 
