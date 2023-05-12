@@ -58,6 +58,13 @@ function Display() {
             
         <section className='modify-window clear'>
           <button className="btn-green search-btn" onClick={LogOut}>Close</button>
+          <div>
+            <select className="select">
+              <option value="1=small">small</option>
+              <option selected value="medium">medium</option>
+              <option value="large">large</option>
+            </select>
+          </div>
                 <div>
                     {/* Checkbox for 'Iced' option */}
                     <label className="centered small-top-margin" htmlFor='checkbox_iced'>

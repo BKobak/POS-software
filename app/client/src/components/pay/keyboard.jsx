@@ -18,6 +18,7 @@ function Keyboard(){
     return(
         <div>
             <div className="add-user-form">
+                {/* Cash Received input field*/}
                 <label className="Header" htmlFor="cash_received">Cash Received:</label>
                 <input
                 className="small-input add-user-input-field"
@@ -29,6 +30,7 @@ function Keyboard(){
                 />
             </div>
             
+            {/* Twelve buttons for the keyboard */}
             <div className="keyboard">
                 <div className="row">
                     <button className="keyboard-button" type="button" onClick={handleClick}>1</button>

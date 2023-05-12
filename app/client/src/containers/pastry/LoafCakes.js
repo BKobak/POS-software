@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Menu from '../Menu';
 import axios from 'axios';
 
+// Function to display pastry items from category loafcakes
 function LoafCakes() {
-    const [menuItems, setMenuItems] = useState([axios.get('http://localhost:3001/loafcakes')]);
+    const [menuItems, setMenuItems] = useState([]);
     
   useEffect(() => {
     // Make a GET request to retrieve data from the Milk table

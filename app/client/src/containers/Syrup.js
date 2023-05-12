@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Menu from './Menu';
 import axios from 'axios';
 
+// Function to display items from category syrup
 function Syrup() {
-    
+    // Declare a new state variable, which we'll call menuItems and basket
     const [menuItems, setMenuItems] = useState([axios.get('http://localhost:3001/syrup')]);
     const [basket, setBasket] = useState([]);
   useEffect(() => {

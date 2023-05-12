@@ -233,7 +233,7 @@ app.get("/others", (req, res) => {
     });
 });
 
-/*
+
 // Handle a request to the login endpoint
 app.post('/login', (req, res) => {
     const { id, pin } = req.body;
@@ -247,11 +247,11 @@ app.post('/login', (req, res) => {
         res.status(401).send('Invalid ID or PIN');
       } else {
         // Authentication successful, redirect to the display page
-        res.redirect('/display');
+        return res.redirect('/display');
       }
     });
   });
-*/
+
 
 // Start server on port 3001.
 app.listen(3001,function(){

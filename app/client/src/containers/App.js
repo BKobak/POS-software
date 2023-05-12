@@ -12,6 +12,7 @@ import DiscountCont from './Discount';
 import { AuthProvider } from '../context/AuthProvider';
 import BasketContext from '../context/BasketContext';
 
+// Display the app
 function App() {
   const [basket, setBasket] = useState([]);
   return (
@@ -20,7 +21,6 @@ function App() {
         {/* Establish routes. */}
         <BrowserRouter>
           <Routes>
-        
             <Route path='/' element={<Login/>}/>
             <Route path='/addUser' element={<AddUser/>}/>
             <Route path='/pay' element={<Pay/>}/>
@@ -28,7 +28,6 @@ function App() {
             <Route path="/discount" element={<DiscountCont/>}/>
             <Route path="/drinks" element={<DrinksCont/>}/>
             <Route path="/all" element={<allPastry/>}/>
-          
           </Routes>
         </BrowserRouter>
       </BasketContext.Provider>

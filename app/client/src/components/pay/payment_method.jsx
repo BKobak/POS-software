@@ -1,6 +1,7 @@
 import React from "react";
 
 function Pay_Method () {
+    // Payment method buttons
     return(
         <>
             <label className="Header" htmlFor="payment_method">Payment Method:</label>

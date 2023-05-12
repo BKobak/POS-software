@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './containers/App';
-import { AuthProvider } from './context/AuthProvider';
 
+// Create a root for the app
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+// Render the app
 root.render(
   <React.StrictMode>
     <App />

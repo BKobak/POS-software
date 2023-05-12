@@ -9,12 +9,15 @@ import Tea from './drinks/Tea.js';
 import Other from './drinks/Other.js';
 import AllDrinks from './drinks/allDrinks.js';
 
-function Drinks() { // Create a class called Drinks that extends Component
-  const [activePage, setActivePage] = useState("allDrinks");
+// Display Drinks page
+function Drinks() {
+    // Create state for active page
+    const [activePage, setActivePage] = useState("Espresso");
 
-  const handleClick = (page) => {
-    setActivePage(page);
-  };
+    // Function to change active page
+    const handleClick = (page) => {
+        setActivePage(page);
+    };
 
   return (
       <div className='clear'>

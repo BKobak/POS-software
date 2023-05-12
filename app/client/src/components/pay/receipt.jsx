@@ -1,5 +1,6 @@
 import React from "react";
 
+// Page to display the receipt
 function Receipt() {
     return (
         <div className="receipt">

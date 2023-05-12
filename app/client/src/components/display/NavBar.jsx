@@ -11,6 +11,7 @@ function Navbar(){
 
   return (
     <div>
+      {/* Navigation bar */}
       <nav className="navbar">
         <ul>
           <li className={activePage === "Drink" ? "active" : ""} onClick={() => handleClick("Drink")}>
@@ -38,6 +39,7 @@ function Navbar(){
             </div>
         </div>
 
+      {/* Display the different pages in the section */}
       <section>
         {activePage === "Drink" && <Drink/>}
         {activePage === "Pastry" && <Pastry/>}

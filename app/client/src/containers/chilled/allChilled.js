@@ -6,12 +6,12 @@ import Paninis from "./Paninis";
 import Pots from "./Pots";
 import Toasties from "./Toasties";
 
+// Display all chilled items
 function AllChilled() {
     return (
       <div className="menu-columns">
         <Breakfast/>
         <Paninis/>
-        <Pots/>
         <Toasties/>
       </div>
     );

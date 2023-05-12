@@ -7,8 +7,9 @@ import Paninis from "./chilled/Paninis";
 import Pots from "./chilled/Pots";
 import AllChilled from "./chilled/allChilled";
 
+// Function to display chilled items
 function Chilled() {
-    const [activePage, setActivePage] = useState("allChilled");
+    const [activePage, setActivePage] = useState("Breakfast");
 
   const handleClick = (page) => {
     setActivePage(page);
@@ -17,6 +18,7 @@ function Chilled() {
   return (
       <div className='clear'>
         <div>
+            {/* Create navigation bar and section for each page */}
             <nav className="small-navbar">
                 <ul>
                 <li className={activePage === "Breakfast" ? "active" : ""} onClick={() => handleClick("Breakfast")}>
@@ -34,11 +36,13 @@ function Chilled() {
                 </ul>
             </nav>
             <section>
+          {/* If active page is "allChilled" display page AllChilled */}
           {activePage === "allChilled" && (
             <div className="menu-columns">
               <AllChilled />
             </div>
           )}
+          {/* If active page is not "allChilled" display page for active page */}
           {activePage !== "allChilled" && (
             <>
               {activePage === "Breakfast" && <Breakfast />}

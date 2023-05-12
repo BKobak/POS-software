@@ -9,13 +9,14 @@ import Muffins from "./pastry/Muffins";
 import AllPastry from "./pastry/allPastry";
 
 function Pastry() {
-  const [activePage, setActivePage] = useState("allPastry");
+  const [activePage, setActivePage] = useState("Muffins");
 
   const handleClick = (page) => {
     setActivePage(page);
   };
 
   return (
+    // Create navigation bar and section for each page
       <div className='clear'>
         <div>
             <nav className="small-navbar">

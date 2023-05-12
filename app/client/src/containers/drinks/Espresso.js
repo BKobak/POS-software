@@ -3,8 +3,9 @@ import Menu from '../Menu';
 import axios from 'axios';
 import BasketContext from '../../context/BasketContext';
 
+// Function to display display items from category espresso
 function Espresso() {
-    const [menuItems, setMenuItems] = useState([axios.get('http://localhost:3001/espresso')]);
+    const [menuItems, setMenuItems] = useState([]);
     const { basket, setBasket } = useContext(BasketContext);
     
   useEffect(() => {

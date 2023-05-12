@@ -1,17 +1,20 @@
 import React from 'react';
 
+// Function to create and display basket
 function Basket({ basket }) {
+    // Count the number of each item in the basket
     const itemCounts = basket.reduce((counts, item) => {
       counts[item.id] = (counts[item.id] || 0) + 1;
       return counts;
     }, {});
   
+    // Calculate the total price of the basket
     const total = Object.entries(itemCounts).reduce((sum, [id, count]) => {
       const item = basket.find((i) => i.id === parseInt(id));
       return sum + item.price * count;
     }, 0);
   
-  
+    // Display the basket
     return (
       <table>
         <tbody>

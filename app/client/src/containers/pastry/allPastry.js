@@ -7,13 +7,13 @@ import Cookies from "./Cookies";
 import LoafCakes from "./LoafCakes";
 import Muffins from "./Muffins";
 
+// Display all pastry items
 function AllPastry() {
     return (
       <div className="menu-columns">
         <Breakfast/>
         <Cakes/>
         <Cookies/>
-        <LoafCakes/>
         <Muffins/>
       </div>
     );

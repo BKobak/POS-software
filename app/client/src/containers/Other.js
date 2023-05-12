@@ -3,7 +3,7 @@ import Menu from './Menu';
 import axios from 'axios';
 
 function Other() {
-    const [menuItems, setMenuItems] = useState([axios.get('http://localhost:3001/others')]);
+    const [menuItems, setMenuItems] = useState([]);
     const [basket, setBasket] = useState([]);
     useEffect(() => {
         // Make a GET request to retrieve data from the Milk table

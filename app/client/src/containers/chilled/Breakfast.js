@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Menu from '../Menu';
 import axios from 'axios';
 
+// Function to display chilled items from category breakfast
 function Breakfast() {
-    const [menuItems, setMenuItems] = useState([axios.get('/breakfast_chilled')]);
+    const [menuItems, setMenuItems] = useState([]);
     
   useEffect(() => {
     // Make a GET request to retrieve data from the Milk table

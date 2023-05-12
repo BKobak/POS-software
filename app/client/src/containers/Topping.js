@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Menu from './Menu';
 import axios from 'axios';
 
+// Function to display items from category topping
 function Topping() {
-    
+    // Declare new state variables menuItems and basket
     const [menuItems, setMenuItems] = useState([axios.get('/topping')]);
     const [basket, setBasket] = useState([]);
   useEffect(() => {

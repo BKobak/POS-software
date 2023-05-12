@@ -193,7 +193,8 @@ width:70px
 }
 
 .check:checked:before {
-content:"✔"
+content:"✔";
+text-shadow: rgb(0, 0, 255) 0px 0px 3px;
 }
 
 .clear {
@@ -241,7 +242,7 @@ border-radius:6px;
 box-sizing:border-box;
 color:#fff;
 cursor:pointer;
-font-size:18px;
+font-size:15px;
 font-weight:500;
 height:60px;
 letter-spacing:1px;
@@ -251,7 +252,7 @@ padding:8px;
 position:relative;
 text-decoration:none;
 transition:all .3s ease;
-width:140px
+width:120px
 }
 
 .form .button {
@@ -553,10 +554,20 @@ top:79vh;
 
 
 .search-btn {
-height:60px;
+height:50px;
 position:absolute;
-top: 20px;
+top: 10px;
 width:80px;
+}
+
+.select{
+  width: 100px;
+  padding: 3px;
+  font-size: 15px;
+  box-shadow: rgb(0, 0, 255) 0px 0px 2px 0.35px;
+  height: 35px;
+  top: 93px;
+  position: absolute;
 }
 
 .toggle {
@@ -564,7 +575,7 @@ width:80px;
 -webkit-appearance:none;
 appearance:none;
 background-color:#707070;
-border:none;
+box-shadow: rgb(0, 0, 255) 0px 0px 1px 0.35px;
 border-radius:50px;
 cursor:pointer;
 display:inline-block;
@@ -665,6 +676,7 @@ nav {
     
 .navbar {
     display: flex;
+    position: sticky;
     justify-content: center;
     align-items: center;
     height: 90px;
@@ -851,12 +863,13 @@ padding: 6px;
 .menu-container {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 
 .menu-grid {
   flex-direction: column;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .mod-btn{
@@ -865,4 +878,12 @@ padding: 6px;
   top: -13vh;
   font-size: 18px;
   background-color: #707070;
+  box-shadow: rgb(0, 0, 255) 0px 0px 3px 0.35px;
+}
+
+.iced{
+  background-color: rgb(0, 0, 255);
+}
+.espresso{
+  background-color: #6a6044;
 }

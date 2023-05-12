@@ -6,6 +6,7 @@ function Order_Window () {
     const [basket, setBasket] = useState([]);
     const { toggleValue, setToggleValue } = useContext(ToggleContext);
 
+    // Function to handle toggling the toggle button
     const handleClick = () => {
         setToggleValue(!toggleValue);
         if (toggleValue === true) {

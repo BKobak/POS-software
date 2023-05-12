@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Menu from '../Menu';
 import axios from 'axios';
 
+// Function to display display drink items from category other
 function Other() {
-    const [menuItems, setMenuItems] = useState([axios.get('http://localhost:3001/other')]);
+  const [menuItems, setMenuItems] = useState([]);
     
   useEffect(() => {
     // Make a GET request to retrieve data from the Milk table

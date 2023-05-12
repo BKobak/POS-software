@@ -7,6 +7,7 @@ import Iced from "./Iced";
 import Other from "./Other";
 import Tea from "./Tea";
 
+// Function to display all drinks
 function AllDrinks() {
     return (
       <div className="menu-columns">
@@ -14,28 +15,17 @@ function AllDrinks() {
           <tbody>
             <tr>
               <td>
-                <Brewed/>
-              </td>
-              <td>
                 <Espresso/>
               </td>
               <td>
                 <Iced/>
-              </td>
-              <td>
-                <Other/>
-              </td>
+              </td>            
               <td>
                 <Tea/>
               </td>
             </tr>
           </tbody>
         </table>
-        
-        {/*
-        <Iced/>
-        <Other/>
-        <Tea/>*/}
       </div>
     );
 }

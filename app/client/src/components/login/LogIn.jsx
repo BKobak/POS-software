@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Redirect } from 'react';
 
 import AuthContext from "../../context/AuthProvider";
 import axios from 'axios';
@@ -11,15 +10,16 @@ function LogIn() {
   // Create a variable to navigate to other pages.
     const navigate = useNavigate();
 
+    const [id, setId] = useState('');
+    const [pin, setPin] = useState('');
+    
+    {/*
     const { setAuth } = useContext(AuthContext);
     const userRef = useRef();
     const errRef = useRef();
-
-    const [id, setId] = useState('');
-    const [pin, setPin] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
-
+    
     useEffect(() => {
         userRef.current.focus();
     }, [])
@@ -56,14 +56,15 @@ function LogIn() {
             errRef.current.focus();
         }
     }
+  */}
+
+  const ToDisplay = () => {
+    navigate('/display');
+  }
 
   
   return (
     <>
-      {success ? (
-          <Redirect to="http://localhost:3001/display" />
-      ) : (
-
         <div className='bb'>
           <Helmet>
             {/* Required meta tags */}
@@ -81,23 +82,24 @@ function LogIn() {
               <div className="form-login">
                 <span className="title">WELCOME!</span>
 
+                
                 {/* Display error message if authentication failed */}
-                <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-
+                {/*<p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>*/}
+                
                 {/* Establish & format user textboxes */}
-                <form onSubmit={handleSubmit} method='POST'>
+                <form>
                   {/* Format the User ID textbox */}
                   <div className="input-field">
                     <input 
                       type="text" 
                       id="id"
-                      ref={userRef}
+                      //ref={userRef}
                       className="form-input" 
                       autoComplete="off" 
                       placeholder=" "
                       name="id" 
-                      onChange={(e) => setId(e.target.value)}
-                      value={id}
+                      //onChange={(e) => setId(e.target.value)}
+                      //value={id}
                       required
                     />
                     <label htmlFor="id" className="form-label">YOUR ID</label>
@@ -113,8 +115,8 @@ function LogIn() {
                       autoComplete="off"
                       placeholder=" " 
                       name="pin" 
-                      onChange={(e) => setPin(e.target.value)}
-                      value={pin}
+                      //onChange={(e) => setPin(e.target.value)}
+                      //value={pin}
                       required
                     />
                     <label htmlFor="pin" className="form-label">YOUR PIN</label>
@@ -122,7 +124,7 @@ function LogIn() {
                   </div>
                   {/* Form the button that activates a Login */}
                   <div>
-                    <button className="btn-green login" onClick={handleSubmit} type="submit">Login</button>
+                    <button className="btn-green login" onClick={ToDisplay} type="submit">Login</button>
                   </div>
                 </form>
 
@@ -138,7 +140,6 @@ function LogIn() {
             </div>
           </div>
         </div>
-      )}
     </>
   );
 } 
