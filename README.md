@@ -10,7 +10,6 @@ Point-Of-Sale desktop application for coffee shop.
   <img src="https://skillicons.dev/icons?i=javascript" title="JavaScript" alt="JavaScript"/>&nbsp;&nbsp;
   <img src="https://skillicons.dev/icons?i=nodejs" title="NodeJS" alt="NodeJS"/>&nbsp;&nbsp;
   <img src="https://skillicons.dev/icons?i=react" title="React" alt="React"/>&nbsp;&nbsp;
-  <img src="https://skillicons.dev/icons?i=electron" title="Electron" alt="Electron"/>&nbsp;&nbsp;
   <img src="https://skillicons.dev/icons?i=css"  title="CSS3" alt="CSS"/>&nbsp;&nbsp;
   <img src="https://skillicons.dev/icons?i=html" title="HTML5" alt="HTML"/>&nbsp;&nbsp;
   <img src="https://skillicons.dev/icons?i=mysql" title="MySQL" alt="MySQL"/>&nbsp;&nbsp;
